@@ -81,7 +81,7 @@ MATLAB scripts will allow you to specify the selected parameters through the use
 
 ### Generate h5py
 
-To generate the h5py containing labels and features for a datast use:
+To generate the h5py containing labels and features for a dataset use:
 
 ```
 python generate-h5.py -db <name_of_db> -db_config <number_of_config>

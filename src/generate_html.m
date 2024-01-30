@@ -10,7 +10,8 @@ function [out] = generate_html(name,path)
         name_html=strcat(name,'.html');
         folder=('src/html_files');
         out=fullfile(folder,name_html);
-        command_str=sprintf("src/exiftool -htmlDump %s > %s",string(path),out);
+        command_str=sprintf("exiftool -htmlDump %s > %s",string(path),out);
+%       command_str=sprintf("src/exiftool -htmlDump %s > %s",string(path),out);
         system(command_str);
 end
 
